@@ -1,0 +1,190 @@
+﻿<Window x:Class="WeatherApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherApp"
+        mc:Ignorable="d"
+        Title="Weather App" Height="510" Width="800"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="CanResize">
+    
+    <DockPanel LastChildFill="True" Name="dockPanel">
+        
+        <!-- Menu Bar -->
+        <Menu DockPanel.Dock="Top" Height="20">
+            <MenuItem Header="Settings" Name="SettingsBtn" IsEnabled="True">
+                <MenuItem Header="Location" Name="LocationBtn" Click="LocationBtn_Click"/>
+                <MenuItem Header="Refresh" Name="RefreshBtn" Click="RefreshBtn_Click"/>
+            </MenuItem>
+            <MenuItem Header="About" Name="AboutBtn">
+                <MenuItem Header="Information" Name="DocumentationBtn" Click="DocumentationBtn_Click"/>
+                <MenuItem Header="Credits" Name="CreditsBtn" Click="CreditsBtn_Click"/>
+            </MenuItem>
+        </Menu>
+        
+        <!-- Location -->
+        <Border DockPanel.Dock="Top" Height="42" Margin="10" Background="LightGray" Padding="5" CornerRadius="10" MinHeight="42">
+            <TextBlock Name="LocationTextBox" TextWrapping="Wrap" Text="" FontSize="24" VerticalAlignment="Center" Background="LightGray"/>
+        </Border>
+
+        <!-- Alerts -->
+        <Border DockPanel.Dock="Top" Height="Auto" Background="LightGray" Margin="10,0,10,10" CornerRadius="10">
+            <ListBox Name="AlertsListBox" Background="White"/>
+        </Border>
+
+        <!-- Current Conditions -->
+        <Border CornerRadius="10" Margin="10,0,10,10" Width="254" Background="LightGray" Padding="5" DockPanel.Dock="Left" MinHeight="378">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <TextBlock Text="Temperature:" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                    <TextBlock Name="Temp" Text="N/A" Margin="5,0,0,0" Style="{StaticResource ConditionTextStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <TextBlock Text="Condition:" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                    <TextBlock Name="Condition" Text="N/A" Margin="5,0,0,0" Style="{StaticResource ConditionTextStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <TextBlock Text="Wind Speed:" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                    <TextBlock Name="WindMPH" Text="N/A" Margin="5,0,0,0" Style="{StaticResource ConditionTextStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <TextBlock Text="Wind Direction:" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                    <TextBlock Name="WindDir" Text="N/A" Margin="5,0,0,0" Style="{StaticResource ConditionTextStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" Orientation="Horizontal">
+                    <TextBlock Text="Precipitation:" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                    <TextBlock Name="Precip" Text="N/A" Margin="5,0,0,0" Style="{StaticResource ConditionTextStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" Orientation="Horizontal">
+                    <TextBlock Text="Humidity:" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                    <TextBlock Name="Humidity" Text="N/A" Margin="5,0,0,0" Style="{StaticResource ConditionTextStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="6" Orientation="Horizontal">
+                    <TextBlock Text="Feels Like:" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                    <TextBlock Name="FeelsLike" Text="N/A" Margin="5,0,0,0" Style="{StaticResource ConditionTextStyle}"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Grid for Hourly and Daily forecasts -->
+        <Grid Margin="0,0,10,10" MinHeight="378">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Grid for Hourly Forecasts -->
+            <Border Margin="0,0,0,10" Background="LightGray" Grid.Row="0" CornerRadius="10" Padding="5">
+                <Grid Background="LightGray" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Vertical">
+                        <TextBlock Name="Hour1" Text="Hour1" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="HourlyImage1"/>
+                        <TextBlock Name="Temp1" Text="Temp1" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Precip1" Text="Precip1" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Orientation="Vertical">
+                        <TextBlock Name="Hour2" Text="Hour2" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="HourlyImage2"/>
+                        <TextBlock Name="Temp2" Text="Temp2" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Precip2" Text="Precip2" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Orientation="Vertical">
+                        <TextBlock Name="Hour3" Text="Hour3" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="HourlyImage3"/>
+                        <TextBlock Name="Temp3" Text="Temp3" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Precip3" Text="Precip3" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="3" Orientation="Vertical">
+                        <TextBlock Name="Hour4" Text="Hour4" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="HourlyImage4"/>
+                        <TextBlock Name="Temp4" Text="Temp4" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Precip4" Text="Precip4" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="4" Orientation="Vertical">
+                        <TextBlock Name="Hour5" Text="Hour5" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="HourlyImage5"/>
+                        <TextBlock Name="Temp5" Text="Temp5" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Precip5" Text="Precip5" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            
+            <!-- Grid for Daily Forecasts -->
+            <Border Background="LightGray" Grid.Row="1" CornerRadius="10" Padding="5">
+                <Grid Background="LightGray" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Vertical">
+                        <TextBlock Name="Day1" Text="Day1" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="DailyImage1"/>
+                        <TextBlock Name="High1" Text="High1" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Low1" Text="Low1" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Orientation="Vertical">
+                        <TextBlock Name="Day2" Text="Day2" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="DailyImage2"/>
+                        <TextBlock Name="High2" Text="High2" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Low2" Text="Low2" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Orientation="Vertical">
+                        <TextBlock Name="Day3" Text="Day3" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="DailyImage3"/>
+                        <TextBlock Name="High3" Text="High3" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Low3" Text="Low3" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="3" Orientation="Vertical">
+                        <TextBlock Name="Day4" Text="Day4" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="DailyImage4"/>
+                        <TextBlock Name="High4" Text="High4" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Low4" Text="Low4" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="4" Orientation="Vertical">
+                        <TextBlock Name="Day5" Text="Day5" Height="Auto" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Style="{StaticResource ConditionTextStyle}"/>
+                        <Image Name="DailyImage5"/>
+                        <TextBlock Name="High5" Text="High5" Height="Auto" HorizontalAlignment="Center" Margin="5" Style="{StaticResource ConditionTextStyle}"/>
+                        <TextBlock Name="Low5" Text="Low5" Height="Auto" HorizontalAlignment="Center" Margin="5,0" Style="{StaticResource ConditionTextStyle}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </DockPanel>
+</Window>
