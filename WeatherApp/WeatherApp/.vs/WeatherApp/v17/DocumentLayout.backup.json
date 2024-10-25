@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|c:\\users\\hargu\\onedrive\\desktop\\spring24\\it4400\\finalproject\\weatherapp\\weatherapp\\locationchangewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|solutionrelative:locationchangewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|c:\\users\\hargu\\onedrive\\desktop\\spring24\\it4400\\finalproject\\weatherapp\\weatherapp\\weather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|solutionrelative:weather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|c:\\users\\hargu\\onedrive\\desktop\\spring24\\it4400\\finalproject\\weatherapp\\weatherapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|c:\\users\\hargu\\onedrive\\desktop\\spring24\\it4400\\finalproject\\weatherapp\\weatherapp\\weatherdatastructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|solutionrelative:weatherdatastructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|c:\\users\\hargu\\onedrive\\desktop\\spring24\\it4400\\finalproject\\weatherapp\\weatherapp\\locationchangewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|solutionrelative:locationchangewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|c:\\users\\hargu\\onedrive\\desktop\\spring24\\it4400\\finalproject\\weatherapp\\weatherapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F41F9608-5DBC-497A-906D-9FBB1515E5A1}|WeatherApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-25T18:15:36.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LocationChangeWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\LocationChangeWindow.xaml",
+              "RelativeDocumentMoniker": "LocationChangeWindow.xaml",
+              "ToolTip": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\LocationChangeWindow.xaml",
+              "RelativeToolTip": "LocationChangeWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-25T18:15:36.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherDataStructures.cs",
+              "DocumentMoniker": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\WeatherDataStructures.cs",
+              "RelativeDocumentMoniker": "WeatherDataStructures.cs",
+              "ToolTip": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\WeatherDataStructures.cs",
+              "RelativeToolTip": "WeatherDataStructures.cs",
+              "ViewState": "AQIAAAIBAAAAAAAAAAAuwEkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T18:15:36.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAuwC0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T18:15:36.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Weather.cs",
+              "DocumentMoniker": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\Weather.cs",
+              "RelativeDocumentMoniker": "Weather.cs",
+              "ToolTip": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\Weather.cs",
+              "RelativeToolTip": "Weather.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAuwCwAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T18:15:36.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LocationChangeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\LocationChangeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LocationChangeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\LocationChangeWindow.xaml.cs",
+              "RelativeToolTip": "LocationChangeWindow.xaml.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T18:15:36.919Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

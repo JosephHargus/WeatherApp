@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hargu\\OneDrive\\Desktop\\IT4400\\FinalProject\\WeatherApp\\WeatherApp.csproj": {}
+    "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\WeatherApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hargu\\OneDrive\\Desktop\\IT4400\\FinalProject\\WeatherApp\\WeatherApp.csproj": {
+    "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\WeatherApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hargu\\OneDrive\\Desktop\\IT4400\\FinalProject\\WeatherApp\\WeatherApp.csproj",
+        "projectUniqueName": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\WeatherApp.csproj",
         "projectName": "WeatherApp",
-        "projectPath": "C:\\Users\\hargu\\OneDrive\\Desktop\\IT4400\\FinalProject\\WeatherApp\\WeatherApp.csproj",
+        "projectPath": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\WeatherApp.csproj",
         "packagesPath": "C:\\Users\\hargu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hargu\\OneDrive\\Desktop\\IT4400\\FinalProject\\WeatherApp\\obj\\",
+        "outputPath": "C:\\Users\\hargu\\OneDrive\\Desktop\\Spring24\\IT4400\\FinalProject\\WeatherApp\\WeatherApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -69,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
